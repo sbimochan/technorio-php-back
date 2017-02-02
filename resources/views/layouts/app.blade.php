@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-
+     <link href="/css/tags.css" rel="stylesheet">
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -86,7 +86,7 @@
     <!-- Scripts -->
 
     <script src="/js/app.js"></script>
-  
+  <script src="/js/tags.js"></script>
      <script>tinymce.init({ selector:'textarea' });</script>
 </body>
 </html>
