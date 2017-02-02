@@ -21,7 +21,7 @@
 @endif
 
 
-            <form class="" action="posts" method="post" onsubmit="myValidate()">
+            <form class="" action="posts" method="post">
               <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" name="title" id="title" value="" class="form-control">
@@ -30,11 +30,17 @@
                 <label for="title">Content</label>
                 <textarea name="content" id="content"></textarea>
               </div>
-              <div class="form-group">
-                <label for="title">tags</label>
-                <input type="text" name="tags" id="tags" value="" class="form-control">
+              <div id="tags">
+              <span>php</span>
+               <span>c++</span>
+               <span>jquery</span>
+               
+                <input type="text" name="tags" id="tags" value="" class="form-control" placeholder="Add a tag">
               </div>
+              
+
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              <br><br><br>
               <div class="form-group">
                 <input type="submit" name="btn_submit" class="btn btn-primary" value="Post">
               </div>
